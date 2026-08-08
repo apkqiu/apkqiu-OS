@@ -1,0 +1,29 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/mnt/g/apkqiu-os",
+            "binaryPath": "/mnt/g/apkqiu-os/format",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/mnt/g/apkqiu-os/build",
+            "binaryPath": "/mnt/g/apkqiu-os/build/kernel.bin",
+            "binaryArgs": []
+        }
+    ],
+    "makefile.configureOnOpen": false,
+    "python.REPL.enableREPLSmartSend": false,
+    "C_Cpp.files.exclude": {
+
+
+        "**/packages": true,
+        "**/.vscode": true,
+        "**/.vs": true
+    },
+    "C_Cpp.codeAnalysis.exclude": {
+        "**/packages": true
+    },
+    "cmake.ignoreCMakeListsMissing": true,
+    "C_Cpp.errorSquiggles": "enabled",
+    
+}

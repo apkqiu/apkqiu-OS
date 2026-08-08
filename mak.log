@@ -1,0 +1,1209 @@
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'nasm' '-M' '-Isrc/boot' 'src/boot/boot.asm'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m src/boot/boot : src/boot/boot.asm src/boot/include/common.inc \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m   src/boot/real/real_mode.inc src/boot/real/a20.inc \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m   src/boot/real/probe_memory.inc src/boot/protected/gdt.inc \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m   src/boot/protected/protected_mode.inc src/boot/mmu/paging.inc[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m [0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'nasm' '-M' '-Isrc/boot' 'src/boot/loader.asm'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m src/boot/loader : src/boot/loader.asm[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m [0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/kernel.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m kernel.o: src/kernel/kernel.c src/include/drivers/display/vga_text.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/display/base.h src/include/drivers/tty/serial.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/tty/base.h src/include/drivers/tty/screen_text.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/std/stdio.h src/include/memory_probe.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/kernelio.h src/include/system/idt.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/safe_string.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m safe_string.o: src/kernel/safe_string.c src/include/safe_string.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/std/string.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/std/string.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m string.o: src/kernel/std/string.c src/include/std/string.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/std/stdio/sprintf.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m sprintf.o: src/kernel/std/stdio/sprintf.c src/include/std/stdio.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/drivers/display/vga_text.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m vga_text.o: src/kernel/drivers/display/vga_text.c \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/display/vga_text.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/display/base.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/drivers/disk/ata.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m ata.o: src/kernel/drivers/disk/ata.c src/include/kernelio.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/disk/ata.h src/include/drivers/disk/base.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/status.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/drivers/tty/serial.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m serial.o: src/kernel/drivers/tty/serial.c \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/tty/serial.h src/include/drivers/tty/base.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/kernelio.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/drivers/tty/screen_text.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m screen_text.o: src/kernel/drivers/tty/screen_text.c \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/tty/screen_text.h src/include/drivers/tty/base.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/drivers/display/base.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/drivers/tty/base.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m base.o: src/kernel/drivers/tty/base.c src/include/drivers/tty/base.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/std/stdio.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/kernel/system/idt.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m idt.o: src/kernel/system/idt.c src/include/system/idt.h \[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m  src/include/kernelio.h src/include/system/idth.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/long/disk.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m disk.o: src/long/disk.c src/include/kernelio.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Executing [33m'gcc' '-MM' '-Isrc/include' '-Isrc/include/std' 'src/long/long.c'[0m - Output has been captured.[0m
+[1;34mMainProcess - MainThread - ShellExecute_tty [INFO][0m long.o: src/long/long.c src/long/elf.h[0m
+[1;34mMainProcess - MainThread - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/boot/boot.asm << ['src/boot/include/common.inc', 'src/boot/real/real_mode.inc', 'src/boot/real/a20.inc', 'src/boot/real/probe_memory.inc', 'src/boot/protected/gdt.inc', 'src/boot/protected/protected_mode.inc', 'src/boot/mmu/paging.inc'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/boot/boot.bin << ['src/boot/boot.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' 'src/boot/boot.asm' '-f' 'bin' '-o' 'build/boot/boot.bin' '-Isrc/boot'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/boot/loader.asm << [][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/boot/loader.bin << ['src/boot/loader.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' 'src/boot/loader.asm' '-f' 'bin' '-o' 'build/boot/loader.bin' '-Isrc/boot'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/long/disk.c << ['src/include/kernelio.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long/disk.o << ['src/long/disk.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' '-mno-mmx' '-mno-sse' '-mno-sse2' '-mno-sse3' '-mno-sse4' '-mno-avx' '-mno-avx2' '-mno-avx512f' 'src/long/disk.c' '-o' 'build/long/long/disk.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/long/long.c << ['src/long/elf.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long/long.o << ['src/long/long.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' '-mno-mmx' '-mno-sse' '-mno-sse2' '-mno-sse3' '-mno-sse4' '-mno-avx' '-mno-avx2' '-mno-avx512f' 'src/long/long.c' '-o' 'build/long/long/long.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long/long_start.o << ['src/long/long_start.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' '-f' 'elf64' 'src/long/long_start.asm' '-o' 'build/long/long/long_start.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long/idt.o << ['src/long/idt.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' '-f' 'elf64' 'src/long/idt.asm' '-o' 'build/long/long/idt.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long/kernelio.o << ['src/long/kernelio.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' '-f' 'elf64' 'src/long/kernelio.asm' '-o' 'build/long/long/kernelio.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long.elf << ['build/long/long/disk.o', 'build/long/long/long.o', 'build/long/long/long_start.o', 'build/long/long/idt.o', 'build/long/long/kernelio.o'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-ld' '-T' 'src/long/linker.ld' '-o' 'build/long/long.elf' 'build/long/long/disk.o' 'build/long/long/long.o' 'build/long/long/long_start.o' 'build/long/long/idt.o' 'build/long/long/kernelio.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/long/long.bin << ['build/long/long.elf'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'objcopy' '-O' 'binary' 'build/long/long.elf' 'build/long/long.bin'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/kernel.c << ['src/include/drivers/display/vga_text.h', 'src/include/drivers/display/base.h', 'src/include/drivers/tty/serial.h', 'src/include/drivers/tty/base.h', 'src/include/drivers/tty/screen_text.h', 'src/include/std/stdio.h', 'src/include/memory_probe.h', 'src/include/kernelio.h', 'src/include/system/idt.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/kernel.o << ['src/kernel/kernel.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/kernel.c' '-o' 'build/kernel/kernel/kernel.o'[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/kernel/kernel.c: In function 'kernel_main':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/kernel/kernel.c:21:12: warning: unused variable 'true_len' [-Wunused-variable][0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 21 |     size_t true_len = 0;[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m |            ^~~~~~~~[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/safe_string.c << ['src/include/safe_string.h', 'src/include/std/string.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/safe_string.o << ['src/kernel/safe_string.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/safe_string.c' '-o' 'build/kernel/kernel/safe_string.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/std/string.c << ['src/include/std/string.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/std/string.o << ['src/kernel/std/string.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/std/string.c' '-o' 'build/kernel/kernel/std/string.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/std/stdio/sprintf.c << ['src/include/std/stdio.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/std/stdio/sprintf.o << ['src/kernel/std/stdio/sprintf.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/std/stdio/sprintf.c' '-o' 'build/kernel/kernel/std/stdio/sprintf.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/drivers/display/vga_text.c << ['src/include/drivers/display/vga_text.h', 'src/include/drivers/display/base.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/drivers/display/vga_text.o << ['src/kernel/drivers/display/vga_text.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/drivers/display/vga_text.c' '-o' 'build/kernel/kernel/drivers/display/vga_text.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/drivers/disk/ata.c << ['src/include/kernelio.h', 'src/include/drivers/disk/ata.h', 'src/include/drivers/disk/base.h', 'src/include/status.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/drivers/disk/ata.o << ['src/kernel/drivers/disk/ata.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/drivers/disk/ata.c' '-o' 'build/kernel/kernel/drivers/disk/ata.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/drivers/tty/serial.c << ['src/include/drivers/tty/serial.h', 'src/include/drivers/tty/base.h', 'src/include/kernelio.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/drivers/tty/serial.o << ['src/kernel/drivers/tty/serial.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/drivers/tty/serial.c' '-o' 'build/kernel/kernel/drivers/tty/serial.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/drivers/tty/screen_text.c << ['src/include/drivers/tty/screen_text.h', 'src/include/drivers/tty/base.h', 'src/include/drivers/display/base.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/drivers/tty/screen_text.o << ['src/kernel/drivers/tty/screen_text.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/drivers/tty/screen_text.c' '-o' 'build/kernel/kernel/drivers/tty/screen_text.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/drivers/tty/base.c << ['src/include/drivers/tty/base.h', 'src/include/std/stdio.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/drivers/tty/base.o << ['src/kernel/drivers/tty/base.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/drivers/tty/base.c' '-o' 'build/kernel/kernel/drivers/tty/base.o'[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/include/system/idth.h << [][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building src/kernel/system/idt.c << ['src/include/system/idt.h', 'src/include/kernelio.h', 'src/include/system/idth.h'][0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/system/idt.o << ['src/kernel/system/idt.c'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'packages/bin/x86_64-elf/bin/x86_64-elf-gcc' '-Isrc/include' '-Isrc/include/std' '-O2' '-ffreestanding' '-c' '-Wall' '-fno-stack-protector' 'src/kernel/system/idt.c' '-o' 'build/kernel/kernel/system/idt.o'[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/kernel/system/idt.c: In function 'init_idt':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/kernel/system/idt.c:85:14: warning: unused variable 'cs' [-Wunused-variable][0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 85 |     uint16_t cs = 0x18;[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m |              ^~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m In file included from src/kernel/system/idt.c:128:[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_0':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:6:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 6 | __attribute__((interrupt)) void idt_0(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_1':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:7:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 7 | __attribute__((interrupt)) void idt_1(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_2':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:8:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 8 | __attribute__((interrupt)) void idt_2(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_3':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:9:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 9 | __attribute__((interrupt)) void idt_3(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_4':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:10:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 10 | __attribute__((interrupt)) void idt_4(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_5':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:11:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 11 | __attribute__((interrupt)) void idt_5(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_6':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:12:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 12 | __attribute__((interrupt)) void idt_6(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_7':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:13:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 13 | __attribute__((interrupt)) void idt_7(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_8':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:14:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 14 | __attribute__((interrupt)) void idt_8(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_9':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:15:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 15 | __attribute__((interrupt)) void idt_9(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_10':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:16:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 16 | __attribute__((interrupt)) void idt_10(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_11':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:17:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 17 | __attribute__((interrupt)) void idt_11(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_12':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:18:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 18 | __attribute__((interrupt)) void idt_12(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_13':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:19:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 19 | __attribute__((interrupt)) void idt_13(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_14':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:20:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 20 | __attribute__((interrupt)) void idt_14(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_15':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:21:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 21 | __attribute__((interrupt)) void idt_15(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_16':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:22:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 22 | __attribute__((interrupt)) void idt_16(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_17':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:23:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 23 | __attribute__((interrupt)) void idt_17(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_18':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:24:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 24 | __attribute__((interrupt)) void idt_18(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_19':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:25:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 25 | __attribute__((interrupt)) void idt_19(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_20':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:26:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 26 | __attribute__((interrupt)) void idt_20(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_21':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:27:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 27 | __attribute__((interrupt)) void idt_21(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_22':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:28:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 28 | __attribute__((interrupt)) void idt_22(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_23':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:29:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 29 | __attribute__((interrupt)) void idt_23(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_24':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:30:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 30 | __attribute__((interrupt)) void idt_24(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_25':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:31:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 31 | __attribute__((interrupt)) void idt_25(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_26':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:32:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 32 | __attribute__((interrupt)) void idt_26(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_27':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:33:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 33 | __attribute__((interrupt)) void idt_27(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_28':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:34:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 34 | __attribute__((interrupt)) void idt_28(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_29':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:35:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 35 | __attribute__((interrupt)) void idt_29(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_30':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:36:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 36 | __attribute__((interrupt)) void idt_30(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_31':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:37:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 37 | __attribute__((interrupt)) void idt_31(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_32':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:38:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 38 | __attribute__((interrupt)) void idt_32(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_33':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:39:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 39 | __attribute__((interrupt)) void idt_33(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_34':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:40:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 40 | __attribute__((interrupt)) void idt_34(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_35':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:41:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 41 | __attribute__((interrupt)) void idt_35(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_36':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:42:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 42 | __attribute__((interrupt)) void idt_36(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_37':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:43:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 43 | __attribute__((interrupt)) void idt_37(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_38':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:44:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 44 | __attribute__((interrupt)) void idt_38(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_39':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:45:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 45 | __attribute__((interrupt)) void idt_39(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_40':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:46:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 46 | __attribute__((interrupt)) void idt_40(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_41':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:47:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 47 | __attribute__((interrupt)) void idt_41(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_42':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:48:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 48 | __attribute__((interrupt)) void idt_42(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_43':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:49:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 49 | __attribute__((interrupt)) void idt_43(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_44':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:50:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 50 | __attribute__((interrupt)) void idt_44(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_45':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:51:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 51 | __attribute__((interrupt)) void idt_45(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_46':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:52:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 52 | __attribute__((interrupt)) void idt_46(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_47':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:53:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 53 | __attribute__((interrupt)) void idt_47(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_48':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:54:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 54 | __attribute__((interrupt)) void idt_48(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_49':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:55:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 55 | __attribute__((interrupt)) void idt_49(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_50':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:56:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 56 | __attribute__((interrupt)) void idt_50(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_51':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:57:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 57 | __attribute__((interrupt)) void idt_51(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_52':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:58:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 58 | __attribute__((interrupt)) void idt_52(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_53':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:59:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 59 | __attribute__((interrupt)) void idt_53(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_54':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:60:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 60 | __attribute__((interrupt)) void idt_54(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_55':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:61:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 61 | __attribute__((interrupt)) void idt_55(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_56':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:62:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 62 | __attribute__((interrupt)) void idt_56(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_57':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:63:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 63 | __attribute__((interrupt)) void idt_57(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_58':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:64:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 64 | __attribute__((interrupt)) void idt_58(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_59':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:65:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 65 | __attribute__((interrupt)) void idt_59(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_60':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:66:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 66 | __attribute__((interrupt)) void idt_60(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_61':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:67:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 67 | __attribute__((interrupt)) void idt_61(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_62':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:68:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 68 | __attribute__((interrupt)) void idt_62(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_63':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:69:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 69 | __attribute__((interrupt)) void idt_63(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_64':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:70:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 70 | __attribute__((interrupt)) void idt_64(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_65':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:71:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 71 | __attribute__((interrupt)) void idt_65(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_66':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:72:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 72 | __attribute__((interrupt)) void idt_66(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_67':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:73:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 73 | __attribute__((interrupt)) void idt_67(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_68':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:74:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 74 | __attribute__((interrupt)) void idt_68(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_69':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:75:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 75 | __attribute__((interrupt)) void idt_69(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_70':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:76:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 76 | __attribute__((interrupt)) void idt_70(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_71':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:77:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 77 | __attribute__((interrupt)) void idt_71(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_72':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:78:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 78 | __attribute__((interrupt)) void idt_72(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_73':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:79:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 79 | __attribute__((interrupt)) void idt_73(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_74':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:80:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 80 | __attribute__((interrupt)) void idt_74(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_75':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:81:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 81 | __attribute__((interrupt)) void idt_75(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_76':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:82:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 82 | __attribute__((interrupt)) void idt_76(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_77':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:83:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 83 | __attribute__((interrupt)) void idt_77(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_78':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:84:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 84 | __attribute__((interrupt)) void idt_78(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_79':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:85:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 85 | __attribute__((interrupt)) void idt_79(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_80':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:86:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 86 | __attribute__((interrupt)) void idt_80(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_81':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:87:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 87 | __attribute__((interrupt)) void idt_81(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_82':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:88:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 88 | __attribute__((interrupt)) void idt_82(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_83':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:89:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 89 | __attribute__((interrupt)) void idt_83(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_84':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:90:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 90 | __attribute__((interrupt)) void idt_84(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_85':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:91:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 91 | __attribute__((interrupt)) void idt_85(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_86':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:92:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 92 | __attribute__((interrupt)) void idt_86(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_87':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:93:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 93 | __attribute__((interrupt)) void idt_87(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_88':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:94:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 94 | __attribute__((interrupt)) void idt_88(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_89':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:95:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 95 | __attribute__((interrupt)) void idt_89(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_90':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:96:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 96 | __attribute__((interrupt)) void idt_90(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_91':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:97:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 97 | __attribute__((interrupt)) void idt_91(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_92':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:98:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 98 | __attribute__((interrupt)) void idt_92(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_93':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:99:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 99 | __attribute__((interrupt)) void idt_93(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_94':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:100:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 100 | __attribute__((interrupt)) void idt_94(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_95':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:101:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 101 | __attribute__((interrupt)) void idt_95(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_96':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:102:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 102 | __attribute__((interrupt)) void idt_96(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_97':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:103:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 103 | __attribute__((interrupt)) void idt_97(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_98':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:104:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 104 | __attribute__((interrupt)) void idt_98(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_99':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:105:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 105 | __attribute__((interrupt)) void idt_99(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_100':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:106:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 106 | __attribute__((interrupt)) void idt_100(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_101':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:107:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 107 | __attribute__((interrupt)) void idt_101(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_102':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:108:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 108 | __attribute__((interrupt)) void idt_102(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_103':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:109:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 109 | __attribute__((interrupt)) void idt_103(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_104':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:110:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 110 | __attribute__((interrupt)) void idt_104(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_105':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:111:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 111 | __attribute__((interrupt)) void idt_105(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_106':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:112:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 112 | __attribute__((interrupt)) void idt_106(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_107':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:113:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 113 | __attribute__((interrupt)) void idt_107(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_108':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:114:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 114 | __attribute__((interrupt)) void idt_108(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_109':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:115:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 115 | __attribute__((interrupt)) void idt_109(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_110':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:116:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 116 | __attribute__((interrupt)) void idt_110(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_111':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:117:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 117 | __attribute__((interrupt)) void idt_111(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_112':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:118:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 118 | __attribute__((interrupt)) void idt_112(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_113':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:119:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 119 | __attribute__((interrupt)) void idt_113(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_114':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:120:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 120 | __attribute__((interrupt)) void idt_114(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_115':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:121:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 121 | __attribute__((interrupt)) void idt_115(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_116':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:122:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 122 | __attribute__((interrupt)) void idt_116(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_117':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:123:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 123 | __attribute__((interrupt)) void idt_117(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_118':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:124:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 124 | __attribute__((interrupt)) void idt_118(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_119':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:125:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 125 | __attribute__((interrupt)) void idt_119(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_120':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:126:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 126 | __attribute__((interrupt)) void idt_120(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_121':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:127:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 127 | __attribute__((interrupt)) void idt_121(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_122':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:128:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 128 | __attribute__((interrupt)) void idt_122(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_123':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:129:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 129 | __attribute__((interrupt)) void idt_123(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_124':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:130:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 130 | __attribute__((interrupt)) void idt_124(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_125':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:131:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 131 | __attribute__((interrupt)) void idt_125(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_126':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:132:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 132 | __attribute__((interrupt)) void idt_126(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_127':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:133:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 133 | __attribute__((interrupt)) void idt_127(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_128':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:134:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 134 | __attribute__((interrupt)) void idt_128(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_129':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:135:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 135 | __attribute__((interrupt)) void idt_129(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_130':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:136:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 136 | __attribute__((interrupt)) void idt_130(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_131':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:137:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 137 | __attribute__((interrupt)) void idt_131(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_132':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:138:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 138 | __attribute__((interrupt)) void idt_132(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_133':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:139:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 139 | __attribute__((interrupt)) void idt_133(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_134':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:140:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 140 | __attribute__((interrupt)) void idt_134(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_135':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:141:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 141 | __attribute__((interrupt)) void idt_135(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_136':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:142:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 142 | __attribute__((interrupt)) void idt_136(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_137':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:143:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 143 | __attribute__((interrupt)) void idt_137(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_138':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:144:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 144 | __attribute__((interrupt)) void idt_138(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_139':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:145:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 145 | __attribute__((interrupt)) void idt_139(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_140':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:146:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 146 | __attribute__((interrupt)) void idt_140(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_141':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:147:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 147 | __attribute__((interrupt)) void idt_141(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_142':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:148:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 148 | __attribute__((interrupt)) void idt_142(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_143':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:149:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 149 | __attribute__((interrupt)) void idt_143(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_144':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:150:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 150 | __attribute__((interrupt)) void idt_144(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_145':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:151:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 151 | __attribute__((interrupt)) void idt_145(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_146':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:152:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 152 | __attribute__((interrupt)) void idt_146(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_147':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:153:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 153 | __attribute__((interrupt)) void idt_147(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_148':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:154:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 154 | __attribute__((interrupt)) void idt_148(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_149':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:155:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 155 | __attribute__((interrupt)) void idt_149(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_150':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:156:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 156 | __attribute__((interrupt)) void idt_150(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_151':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:157:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 157 | __attribute__((interrupt)) void idt_151(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_152':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:158:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 158 | __attribute__((interrupt)) void idt_152(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_153':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:159:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 159 | __attribute__((interrupt)) void idt_153(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_154':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:160:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 160 | __attribute__((interrupt)) void idt_154(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_155':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:161:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 161 | __attribute__((interrupt)) void idt_155(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_156':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:162:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 162 | __attribute__((interrupt)) void idt_156(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_157':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:163:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 163 | __attribute__((interrupt)) void idt_157(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_158':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:164:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 164 | __attribute__((interrupt)) void idt_158(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_159':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:165:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 165 | __attribute__((interrupt)) void idt_159(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_160':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:166:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 166 | __attribute__((interrupt)) void idt_160(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_161':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:167:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 167 | __attribute__((interrupt)) void idt_161(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_162':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:168:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 168 | __attribute__((interrupt)) void idt_162(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_163':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:169:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 169 | __attribute__((interrupt)) void idt_163(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_164':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:170:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 170 | __attribute__((interrupt)) void idt_164(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_165':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:171:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 171 | __attribute__((interrupt)) void idt_165(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_166':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:172:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 172 | __attribute__((interrupt)) void idt_166(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_167':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:173:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 173 | __attribute__((interrupt)) void idt_167(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_168':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:174:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 174 | __attribute__((interrupt)) void idt_168(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_169':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:175:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 175 | __attribute__((interrupt)) void idt_169(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_170':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:176:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 176 | __attribute__((interrupt)) void idt_170(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_171':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:177:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 177 | __attribute__((interrupt)) void idt_171(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_172':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:178:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 178 | __attribute__((interrupt)) void idt_172(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_173':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:179:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 179 | __attribute__((interrupt)) void idt_173(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_174':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:180:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 180 | __attribute__((interrupt)) void idt_174(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_175':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:181:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 181 | __attribute__((interrupt)) void idt_175(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_176':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:182:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 182 | __attribute__((interrupt)) void idt_176(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_177':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:183:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 183 | __attribute__((interrupt)) void idt_177(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_178':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:184:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 184 | __attribute__((interrupt)) void idt_178(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_179':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:185:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 185 | __attribute__((interrupt)) void idt_179(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_180':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:186:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 186 | __attribute__((interrupt)) void idt_180(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_181':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:187:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 187 | __attribute__((interrupt)) void idt_181(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_182':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:188:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 188 | __attribute__((interrupt)) void idt_182(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_183':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:189:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 189 | __attribute__((interrupt)) void idt_183(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_184':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:190:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 190 | __attribute__((interrupt)) void idt_184(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_185':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:191:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 191 | __attribute__((interrupt)) void idt_185(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_186':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:192:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 192 | __attribute__((interrupt)) void idt_186(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_187':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:193:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 193 | __attribute__((interrupt)) void idt_187(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_188':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:194:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 194 | __attribute__((interrupt)) void idt_188(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_189':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:195:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 195 | __attribute__((interrupt)) void idt_189(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_190':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:196:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 196 | __attribute__((interrupt)) void idt_190(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_191':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:197:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 197 | __attribute__((interrupt)) void idt_191(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_192':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:198:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 198 | __attribute__((interrupt)) void idt_192(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_193':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:199:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 199 | __attribute__((interrupt)) void idt_193(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_194':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:200:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 200 | __attribute__((interrupt)) void idt_194(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_195':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:201:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 201 | __attribute__((interrupt)) void idt_195(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_196':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:202:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 202 | __attribute__((interrupt)) void idt_196(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_197':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:203:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 203 | __attribute__((interrupt)) void idt_197(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_198':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:204:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 204 | __attribute__((interrupt)) void idt_198(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_199':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:205:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 205 | __attribute__((interrupt)) void idt_199(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_200':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:206:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 206 | __attribute__((interrupt)) void idt_200(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_201':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:207:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 207 | __attribute__((interrupt)) void idt_201(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_202':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:208:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 208 | __attribute__((interrupt)) void idt_202(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_203':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:209:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 209 | __attribute__((interrupt)) void idt_203(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_204':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:210:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 210 | __attribute__((interrupt)) void idt_204(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_205':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:211:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 211 | __attribute__((interrupt)) void idt_205(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_206':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:212:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 212 | __attribute__((interrupt)) void idt_206(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_207':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:213:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 213 | __attribute__((interrupt)) void idt_207(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_208':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:214:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 214 | __attribute__((interrupt)) void idt_208(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_209':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:215:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 215 | __attribute__((interrupt)) void idt_209(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_210':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:216:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 216 | __attribute__((interrupt)) void idt_210(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_211':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:217:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 217 | __attribute__((interrupt)) void idt_211(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_212':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:218:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 218 | __attribute__((interrupt)) void idt_212(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_213':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:219:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 219 | __attribute__((interrupt)) void idt_213(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_214':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:220:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 220 | __attribute__((interrupt)) void idt_214(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_215':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:221:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 221 | __attribute__((interrupt)) void idt_215(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_216':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:222:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 222 | __attribute__((interrupt)) void idt_216(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_217':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:223:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 223 | __attribute__((interrupt)) void idt_217(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_218':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:224:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 224 | __attribute__((interrupt)) void idt_218(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_219':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:225:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 225 | __attribute__((interrupt)) void idt_219(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_220':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:226:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 226 | __attribute__((interrupt)) void idt_220(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_221':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:227:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 227 | __attribute__((interrupt)) void idt_221(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_222':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:228:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 228 | __attribute__((interrupt)) void idt_222(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_223':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:229:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 229 | __attribute__((interrupt)) void idt_223(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_224':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:230:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 230 | __attribute__((interrupt)) void idt_224(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_225':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:231:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 231 | __attribute__((interrupt)) void idt_225(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_226':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:232:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 232 | __attribute__((interrupt)) void idt_226(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_227':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:233:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 233 | __attribute__((interrupt)) void idt_227(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_228':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:234:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 234 | __attribute__((interrupt)) void idt_228(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_229':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:235:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 235 | __attribute__((interrupt)) void idt_229(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_230':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:236:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 236 | __attribute__((interrupt)) void idt_230(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_231':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:237:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 237 | __attribute__((interrupt)) void idt_231(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_232':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:238:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 238 | __attribute__((interrupt)) void idt_232(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_233':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:239:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 239 | __attribute__((interrupt)) void idt_233(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_234':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:240:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 240 | __attribute__((interrupt)) void idt_234(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_235':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:241:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 241 | __attribute__((interrupt)) void idt_235(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_236':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:242:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 242 | __attribute__((interrupt)) void idt_236(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_237':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:243:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 243 | __attribute__((interrupt)) void idt_237(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_238':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:244:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 244 | __attribute__((interrupt)) void idt_238(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_239':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:245:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 245 | __attribute__((interrupt)) void idt_239(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_240':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:246:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 246 | __attribute__((interrupt)) void idt_240(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_241':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:247:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 247 | __attribute__((interrupt)) void idt_241(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_242':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:248:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 248 | __attribute__((interrupt)) void idt_242(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_243':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:249:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 249 | __attribute__((interrupt)) void idt_243(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_244':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:250:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 250 | __attribute__((interrupt)) void idt_244(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_245':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:251:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 251 | __attribute__((interrupt)) void idt_245(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_246':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:252:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 252 | __attribute__((interrupt)) void idt_246(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_247':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:253:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 253 | __attribute__((interrupt)) void idt_247(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_248':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:254:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 254 | __attribute__((interrupt)) void idt_248(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_249':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:255:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 255 | __attribute__((interrupt)) void idt_249(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_250':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:256:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 256 | __attribute__((interrupt)) void idt_250(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_251':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:257:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 257 | __attribute__((interrupt)) void idt_251(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_252':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:258:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 258 | __attribute__((interrupt)) void idt_252(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_253':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:259:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 259 | __attribute__((interrupt)) void idt_253(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_254':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:260:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 260 | __attribute__((interrupt)) void idt_254(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h: In function 'idt_255':[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m src/include/system/idth.h:261:1: sorry, unimplemented: SSE instructions aren't allowed in an interrupt service routine[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m 261 | __attribute__((interrupt)) void idt_255(IntFrame *){}[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute_tty [ERROR][0m | ^~~~~~~~~~~~~[0m
+[1;31mMainProcess - MakeWorker_0 - ShellExecute [ERROR][0m Process exited with exit code 1[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m Traceback (most recent call last):[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/builder/builder_main.py", line 32, in do_task[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     call()[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     ~~~~^^[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/src/kernel/make.py", line 18, in gcc_elf[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     execute([0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     ~~~~~~~^[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m         X86_64.CC,[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m         ^^^^^^^^^^[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     ...<3 lines>...[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m         dst,[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m         ^^^^[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     )[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     ^[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/builder/system.py", line 74, in execute[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m     raise ChildProcessError(f"Process exited with exit code {code}")[0m
+[1;31mMainProcess - MakeWorker_0 - PyMake [ERROR][0m ChildProcessError: Process exited with exit code 1[0m
+[1;34mMainProcess - MakeWorker_0 - PyMake [INFO][0m Building build/kernel/kernel/kernelio.o << ['src/kernel/kernelio.asm'][0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Executing [33m'nasm' '-f' 'elf64' 'src/kernel/kernelio.asm' '-o' 'build/kernel/kernel/kernelio.o'[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m Traceback (most recent call last):[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m   File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     result = ctx.run(self.task)[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m   File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     return fn(*args, **kwargs)[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/builder/builder_main.py", line 32, in do_task[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     call()[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     ~~~~^^[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/src/kernel/make.py", line 18, in gcc_elf[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     execute([0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     ~~~~~~~^[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m         X86_64.CC,[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m         ^^^^^^^^^^[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     ...<3 lines>...[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m         dst,[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m         ^^^^[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     )[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     ^[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m   File "/home/apkqiu/项目/osdev/builder/system.py", line 74, in execute[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m     raise ChildProcessError(f"Process exited with exit code {code}")[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m ChildProcessError: Process exited with exit code 1[0m
+[1;31mMainProcess - MainThread - PyMake [ERROR][0m An Exception has been raised. Stopping...[0m
+[1;34mMainProcess - MakeWorker_0 - ShellExecute [INFO][0m Process exited with exit code 0[0m
