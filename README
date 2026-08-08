@@ -1,0 +1,20 @@
+# apkqiu-OS
+
+> 练手之作
+
+## 编译
+
+1. [构建GCC交叉编译器（English）](https://wiki.osdev.org/GCC_Cross-Compiler)
+2. 克隆仓库（记得带上`--depth=1`）
+3. 开始构建 `./make -t os.img`
+4. 运行 `./make -c run`
+
+## TODOs
+
+[x] 引导加载器
+[x] 简单elf加载器
+[x] 中断处理程序
+[ ] 内存管理
+[ ] VESA 驱动
+[ ] 用户空间
+[ ] shell
