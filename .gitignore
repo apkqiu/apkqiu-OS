@@ -1,0 +1,5 @@
+packages/
+build/
+**/__pycache__/
+os.img
+*.log

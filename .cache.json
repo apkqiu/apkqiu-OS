@@ -1,0 +1,209 @@
+{
+    "src/boot/include/common.inc": {
+        "hash": "bc59095a580848220004eca0c43c905e"
+    },
+    "src/boot/real/real_mode.inc": {
+        "hash": "d3e7f335faf1acf6d3ce56da634058a8"
+    },
+    "src/boot/real/a20.inc": {
+        "hash": "e8e0604244195053fe6bf15bb74f46be"
+    },
+    "src/boot/loader.asm": {
+        "hash": "a181731e5ed9559925fd8f8bb66584eb"
+    },
+    "src/include/kernelio.h": {
+        "hash": "ca5362cafe55c58c347cdd81cb524e6a"
+    },
+    "src/long/long_start.asm": {
+        "hash": "33c3e7d6aa596f13cdd63fb5f875302c"
+    },
+    "src/boot/real/probe_memory.inc": {
+        "hash": "83983355f4c8948475bffac766f0601e"
+    },
+    "src/boot/protected/gdt.inc": {
+        "hash": "520d995f11bcef276ec40a11ccca8a02"
+    },
+    "src/boot/protected/protected_mode.inc": {
+        "hash": "e7739ba1e2fbc7ec97b712ea70ffea63"
+    },
+    "src/long/idt.asm": {
+        "hash": "d5d23356c60c8a70a0d1d655faf347d2"
+    },
+    "src/long/disk.c": {
+        "hash": "50d1c18687e56e3cd53e8ac41e2289c2"
+    },
+    "src/boot/mmu/paging.inc": {
+        "hash": "2160c9b4e19bc20d56e9982465329b49"
+    },
+    "src/boot/boot.asm": {
+        "hash": "833d454a52bc972ec3867b064127d11e"
+    },
+    "src/long/kernelio.asm": {
+        "hash": "18157438ac602dafd6bc718434aa7407"
+    },
+    "src/long/elf.h": {
+        "hash": "9ed49361fefcf8a5e54fbe2019434e8b"
+    },
+    "src/include/drivers/display/vga_text.h": {
+        "hash": "44e678611d6b428aee5d63351e74ddbc"
+    },
+    "src/include/drivers/display/base.h": {
+        "hash": "4681d58d7805c4ee638a8bf1b61de117"
+    },
+    "src/include/drivers/tty/serial.h": {
+        "hash": "0af7e49f690bdd3952a159178c6141e9"
+    },
+    "src/include/drivers/tty/base.h": {
+        "hash": "279578bfd02647256641b87cbddf7611"
+    },
+    "src/long/long.c": {
+        "hash": "88031a3c3441933583e59e88278bd83c"
+    },
+    "src/include/drivers/tty/screen_text.h": {
+        "hash": "ca4240eb1de163e7433e14375b2917ca"
+    },
+    "build/long/long/disk.o": {
+        "hash": "bccd6d9a705d50e38c5fc0bb28d5435c"
+    },
+    "src/include/drivers/keyboard.h": {
+        "hash": "2fa18b013301f19067906379a51d4885"
+    },
+    "build/long/long/long.o": {
+        "hash": "63001abf8946c7f5ff1ab4a4c3cd2df9"
+    },
+    "src/include/std/stdio.h": {
+        "hash": "8a36445151c2044e98ad35e922cf33ee"
+    },
+    "src/include/memory/memory_probe.h": {
+        "hash": "7f45b8c1956f7f6c237941bf9e455c97"
+    },
+    "build/long/long/long_start.o": {
+        "hash": "dec27ef62db214ba15c7fff29185ba27"
+    },
+    "src/include/system/idt.h": {
+        "hash": "5cc85c714eeebc235b5d7fcc8dba9f97"
+    },
+    "src/include/std/queue.h": {
+        "hash": "e4133783dc20ebd7fb97755958cdd019"
+    },
+    "src/include/std/string.h": {
+        "hash": "dee15e600d8eca1b7b180b26b23400f0"
+    },
+    "build/long/long/idt.o": {
+        "hash": "247b880e2fd5cac559a090d436b43677"
+    },
+    "src/kernel/kernel.c": {
+        "hash": "9baf44e48b888363fabd37cf77f0ecaa"
+    },
+    "src/include/safe_string.h": {
+        "hash": "e97ff6b9127b7ea0ca6f8eae4b82d355"
+    },
+    "build/long/long/kernelio.o": {
+        "hash": "b6b751bde93ea8ff64f93b8a12fc6646"
+    },
+    "src/kernel/std/queue.c": {
+        "hash": "c8e0ee91e87c8ed088754ee52d59146f"
+    },
+    "src/kernel/std/string.c": {
+        "hash": "f3649b4be81adec24fabdb8d41b26ef8"
+    },
+    "src/kernel/safe_string.c": {
+        "hash": "1f5757f8be2dd1ce9484be661a053e15"
+    },
+    "build/long/long.elf": {
+        "hash": "a698968284fa11fe94227a23a4edf93b"
+    },
+    "src/kernel/std/stdio/sprintf.c": {
+        "hash": "e656efa6172c8bce8008b61ddc5fc871"
+    },
+    "src/include/drivers/disk/ata.h": {
+        "hash": "b79eb80a64225ba89464afa33cd399e7"
+    },
+    "src/include/drivers/disk/base.h": {
+        "hash": "33e09488094c3c8fab7b580b4d7dad51"
+    },
+    "src/kernel/drivers/keyboard.c": {
+        "hash": "11e168668fc3b5133c393f40195c1cd3"
+    },
+    "src/kernel/drivers/display/vga_text.c": {
+        "hash": "e0b4d24f9e41acd4dc5997f81add4185"
+    },
+    "src/include/status.h": {
+        "hash": "f47c4ffd1201dff7a8d20bee5f9c3179"
+    },
+    "src/kernel/drivers/disk/ata.c": {
+        "hash": "a9fc7f43af9b402ab66b0b4936ff9784"
+    },
+    "src/kernel/drivers/tty/serial.c": {
+        "hash": "35ba6c605205190d065653299f814c84"
+    },
+    "src/kernel/kernelio.asm": {
+        "hash": "5024b42fe2e66724f3535276de9443ea"
+    },
+    "src/kernel/drivers/tty/screen_text.c": {
+        "hash": "fe59a6770f022b2f1da61672a92d8f94"
+    },
+    "src/include/system/idth.h": {
+        "hash": "64861f437c0ea895d18449c23662fd30"
+    },
+    "src/kernel/drivers/tty/base.c": {
+        "hash": "90c915adced3245dd9033a4485bc355d"
+    },
+    "src/kernel/system/idt.c": {
+        "hash": "64811c628933bb65f9390f11361b7bd4"
+    },
+    "build/kernel/kernel/kernel.o": {
+        "hash": "129c547ac8faeca5a69b09bdeefe4fdd"
+    },
+    "build/kernel/kernel/safe_string.o": {
+        "hash": "de2016a5de7771d96775b30960834b5f"
+    },
+    "build/kernel/kernel/std/queue.o": {
+        "hash": "e3e6d49dfae25e43aaf12317ed62ae0e"
+    },
+    "build/kernel/kernel/std/string.o": {
+        "hash": "d7c9a39bbe62faeac7f2a58d3dcbdbb5"
+    },
+    "build/kernel/kernel/std/stdio/sprintf.o": {
+        "hash": "add918e39113ea9e5d013f54f0cff98d"
+    },
+    "build/kernel/kernel/drivers/keyboard.o": {
+        "hash": "1733a83980851ef724d223b6b918e718"
+    },
+    "build/kernel/kernel/drivers/display/vga_text.o": {
+        "hash": "ee3d9e0775d2c505bc0eaf6d76310a55"
+    },
+    "build/kernel/kernel/drivers/disk/ata.o": {
+        "hash": "09af1381c12d414e52e5ce742df092f8"
+    },
+    "build/kernel/kernel/drivers/tty/serial.o": {
+        "hash": "eef03f749a8c8857301878cc593f808b"
+    },
+    "build/kernel/kernel/drivers/tty/screen_text.o": {
+        "hash": "b7d362e3b8b4820a0f6c861bcebfce9b"
+    },
+    "build/kernel/kernel/drivers/tty/base.o": {
+        "hash": "45c3b992615f7af20f26c22c7ef9dc37"
+    },
+    "build/kernel/kernel/system/idt.o": {
+        "hash": "17319b9f1de9a03f8507acece69950f7"
+    },
+    "build/kernel/kernel/kernelio.o": {
+        "hash": "c00dcfc7b4cce3bd599d6e8a13fabc56"
+    },
+    "build/boot/boot.bin": {
+        "hash": "5e0fd37d62a8111ea4ccc18b70205e3a"
+    },
+    "build/boot/loader.bin": {
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "build/long/long.bin": {
+        "hash": "88f5d51ef6f650b8abb9647806a2bb53"
+    },
+    "build/kernel/kernel.elf": {
+        "hash": "4d226b6d84a62bd00b184cffbe9b656e"
+    },
+    "os.img": {
+        "target": true
+    }
+}
