@@ -1,4 +1,5 @@
 packages/
+tools/prefix/
 build/
 **/__pycache__/
 os.img

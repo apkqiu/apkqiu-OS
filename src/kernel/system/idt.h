@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <stdbool.h>
-#include "std/queue.h"
+#include "../std/queue.h"
 
 // x86-64 中断栈帧（由 CPU 硬件自动压入）
 // 注意：压入顺序是  SS, RSP, RFLAGS, CS, RIP（由高地址向低地址增长）

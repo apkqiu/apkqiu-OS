@@ -1,7 +1,7 @@
 #pragma once
 // PyMake Auto Generated
 
-#include "system/idt.h"
+#include "idt.h"
 void idt_set_gate(int num, uint64_t handler, uint16_t selector, uint8_t flags);
 void common_handler(int vector, IntFrame *frame, uint64_t error_code);
 __attribute__((interrupt)) void idt_0(IntFrame *frame){common_handler(0, frame, 0);}

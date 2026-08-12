@@ -1,4 +1,4 @@
-#include "drivers/display/vga_text.h"
+#include "vga_text.h"
 
 void set_char(const Display *display, size_t row, size_t col, char text, uint8_t color){
     struct{

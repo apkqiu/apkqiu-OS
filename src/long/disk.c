@@ -1,7 +1,5 @@
 // kernel/disk.cpp
 #include <stdint.h>
-#include "kernelio.h"
-// 声明外部 I/O 函数
 
 #define ATA_DATA            0x1F0
 #define ATA_SECTOR_COUNT    0x1F2
@@ -16,6 +14,22 @@
 #define ATA_SR_DRQ          0x08
 #define ATA_SR_ERR          0x01
 #define ATA_CMD_READ_PIO    0x20
+
+static inline uint8_t inb(uint16_t port) {
+    uint8_t value;
+    __asm__ volatile ("inb %1, %0" : "=a"(value) : "d"(port));
+    return value;
+}
+
+static inline uint16_t inw(uint16_t port) {
+    uint16_t value;
+    __asm__ volatile ("inw %1, %0" : "=a"(value) : "d"(port));
+    return value;
+}
+
+static inline void outb(uint16_t port, uint8_t value) {
+    __asm__ volatile ("outb %0, %1" : : "a"(value), "d"(port));
+}
 
 static inline void ata_wait_bsy() {
     while (inb(ATA_STATUS) & ATA_SR_BSY) ;

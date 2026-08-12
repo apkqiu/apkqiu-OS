@@ -8,6 +8,7 @@ def gxx_elf(dst, src):
     execute(
         X86_64.CXX,
         X86_64.CFLAGS,
+        "-O2",
         *src,
         "-o",
         dst,
@@ -18,6 +19,9 @@ def gcc_elf(dst, src):
     execute(
         X86_64.CC,
         X86_64.CFLAGS,
+        "-mcmodel=large",
+        "-fno-pic",
+        "-O2",
         *src,
         "-o",
         dst,
@@ -28,6 +32,8 @@ def gcc_nosse(dst, src):
     execute(
         X86_64.CC,
         X86_64.CFLAGS,
+        "-mcmodel=large",
+        "-O2",
         (
             "-mgeneral-regs-only",
             "-mno-mmx",
@@ -63,7 +69,7 @@ def make_idth(dst, src):
             """#pragma once
 // PyMake Auto Generated
 
-#include "system/idt.h"
+#include "idt.h"
 void idt_set_gate(int num, uint64_t handler, uint16_t selector, uint8_t flags);
 void common_handler(int vector, IntFrame *frame, uint64_t error_code);
 """

@@ -4,20 +4,12 @@ from consts import *
 d = MakeConfig()
 
 
-def gxx_elf(dst, src):
-    execute(
-        X86_64.CXX,
-        X86_64.CFLAGS,
-        *src,
-        "-o",
-        dst,
-    )
-
-
 def gcc_elf(dst, src):
     execute(
         X86_64.CC,
         X86_64.CFLAGS,
+        "-mcmodel=large",
+        "-Os",
         (
             "-mno-mmx",
             "-mno-sse",
@@ -47,11 +39,6 @@ def objcopy(dst, src):
 
 
 objs = []
-for cpp in glob("src/long/**/*.cpp"):
-    obj_name = f"build/long/{n(cpp)}.o"
-    objs.append(obj_name)
-    d.trace("g++", cpp)
-    d.add(obj_name, cpp, gxx_elf)
 
 for c in glob("src/long/**/*.c"):
     obj_name = f"build/long/{n(c)}.o"

@@ -1,8 +1,8 @@
 // src/kernel/keyboard.c
-#include "drivers/keyboard.h"
+#include "keyboard.h"
 #include <stdbool.h>
 #include <stdint.h>
-#include "kernelio.h"   // inb, outb
+#include "../kernelio.h"   // inb, outb
 
 // ---------- 静态状态 ----------
 static bool key_state[256];          // 所有扫描码状态（含扩展码）

@@ -1,6 +1,6 @@
 #pragma once
 #include <stdint.h>
-#include "status.h"
+#include "../../status.h"
 typedef struct Disk
 {
     uint8_t driver_type;

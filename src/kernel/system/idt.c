@@ -1,6 +1,6 @@
-#include "system/idt.h"
+#include "idt.h"
 #include <stdbool.h>
-#include "kernelio.h"
+#include "../kernelio.h"
 #include <stddef.h>
 #define INT_QUEUE_SIZE 256
 
@@ -31,7 +31,7 @@ volatile IntEvent interrupt_queue_buf[INT_QUEUE_SIZE];
 Queue interrupt_queue;
 void init_queue()
 {
-    queue_init(&interrupt_queue, &interrupt_queue_buf, INT_QUEUE_SIZE, sizeof(IntEvent));
+    queue_init(&interrupt_queue, (void*)&interrupt_queue_buf, INT_QUEUE_SIZE, sizeof(IntEvent));
 }
 void idt_set_gate(int num, uint64_t handler, uint16_t selector, uint8_t flags)
 {
@@ -105,4 +105,4 @@ void common_handler(int vector, IntFrame *frame, uint64_t error_code)
     queue_enqueue(&interrupt_queue, &e);
 }
 
-#include "system/idth.h"
+#include "idth.h"

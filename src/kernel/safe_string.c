@@ -1,6 +1,6 @@
 #include "safe_string.h"
 #include <stdint-gcc.h>
-#include "string.h"
+#include "std/string.h"
 
 static inline char check_overflow(size_t a, size_t b)
 {

@@ -8,12 +8,13 @@ class EnvironmentConfig:
         self.CC = self.CXX = self.LD = self.OBJCOPY = ""
 
     def use(self, tool: str):
-        return f"packages/bin/{self.ARCH}/bin/{self.ARCH}-{tool}"
+        return f"tools/prefix/{self.ARCH}-{tool}"
 
     def list(self):
         return [
             i.removeprefix(f"{self.ARCH}-")
-            for i in os.listdir(f"packages/bin/{self.ARCH}/bin/")
+            for i in os.listdir("tools/prefix/")
+            if i.startswith(f"{self.ARCH}-")
         ]
 
 
@@ -28,9 +29,6 @@ def env(arch: str):
     for i in cfg.list():
         setattr(cfg, i.upper().replace("-","_"), cfg.use(i))
     cfg.CFLAGS = [
-        "-Isrc/include",
-        "-Isrc/include/std",
-        "-O2",
         "-ffreestanding",
         "-c",
         "-Wall",

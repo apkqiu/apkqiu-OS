@@ -1,5 +1,5 @@
-#include "drivers/tty/serial.h"
-#include "kernelio.h"
+#include "serial.h"
+#include "../../kernelio.h"
 // 定义COM1串口的基地址（x86标准）
 #define COM1_PORT 0x3F8
 

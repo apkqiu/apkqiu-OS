@@ -34,9 +34,9 @@
 #include <stdint.h>
 #include <stdarg.h>
 
-#include "stdio.h"
+#include "../stdio.h"
 
-#define PRINTF_DISABLE_SUPPORT_FLOAT
+// #define PRINTF_DISABLE_SUPPORT_FLOAT
 
 // define this globally (e.g. gcc -DPRINTF_INCLUDE_CONFIG_H ...) to include the
 // printf_config.h header file

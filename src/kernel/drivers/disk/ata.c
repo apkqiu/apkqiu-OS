@@ -1,8 +1,8 @@
 // kernel/disk.cpp
 #include <stdint.h>
-#include "kernelio.h"
+#include "../../kernelio.h"
 
-#include "drivers/disk/ata.h"
+#include "ata.h"
 // 声明外部 I/O 函数
 
 #define ATA_DATA 0x1F0

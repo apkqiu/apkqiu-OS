@@ -18,14 +18,7 @@
 
 probe_memory:
     ; 手动保存所有可能被修改的寄存器（顺序无所谓，只要弹出时逆序即可）
-    push ax
-    push bx
-    push cx
-    push dx
-    push si
-    push di
-    push es
-    push ds
+    pusha
 
     ; ---------- 设置 ES = 0x0800，目标段（物理地址 0x8000） ----------
     mov ax, 0x0800
@@ -49,7 +42,6 @@ probe_memory:
     ; ---------- 方法 3：E820 探测 ----------
     xor ebx, ebx              ; 起始计数
     mov si, 0                 ; 区域计数器
-    push di                   ; 保存描述符起始偏移（因为后续会修改 DI，需额外保存）
 
 .e820_loop:
     mov eax, 0xE820
@@ -73,14 +65,6 @@ probe_memory:
     ; 写入区域数量
     mov ax, si
     mov byte [es:5], al       ; 偏移 5
-
-    ; 计算总内存（累加所有 Type=1 的区域长度，转换为 KB）
-    pop di                    ; 恢复描述符起始偏移
-    push di                   ; 重新压入以便后续弹出平衡（但下面不再需要，可以在最后统一 pop）
-    ; 但更规范：pop 后不再 push，下面直接使用 di
-    ; 我们重写：pop di 得到起始偏移，然后直接使用
-    ; 但还要保护 di 不被破坏，我们下面用 bx 做循环计数器
-
     mov cx, si                ; 区域数
     xor bx, bx                ; 循环计数器
     xor eax, eax              ; 总字节数低 32 位
@@ -134,16 +118,5 @@ probe_memory:
     jmp .exit
 
 .exit:
-    ; 清理：如果 E820 成功，之前 push di 已被 pop 掉，现在栈平衡
-    ; 但我们在进入 .exit 前没有多余的 push，所以直接恢复所有保存的寄存器
-    ; 注意弹出顺序与压入相反
-    pop di
-    pop ds
-    pop es
-    pop di
-    pop si
-    pop dx
-    pop cx
-    pop bx
-    pop ax
+    popa
     ret

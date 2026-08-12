@@ -1,6 +1,6 @@
 #include <stdarg.h>
-#include "drivers/tty/base.h"
-#include "stdio.h"
+#include "base.h"
+#include "../../std/stdio.h"
 void tty_out(char character, void *arg)
 {
     ((TTY*)arg)->putchar(arg, character);

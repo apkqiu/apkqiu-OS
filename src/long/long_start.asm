@@ -1,6 +1,8 @@
 [section .text.start]
+[bits 64]
 [global _start]
-[extern long_main]
+[extern init_temp_idt]
+[extern load_kernel]
 _start:
     mov ax, 0x10
     mov ds, ax
@@ -9,12 +11,9 @@ _start:
     mov gs, ax
     mov ss, ax
     mov rsp, 0x60000
-    ;sse
-    mov rax, cr4
-    or rax, 0x600
-    mov cr4, rax
 
-    call long_main
+    call init_temp_idt
+    call load_kernel
 .lp:
     cli
     hlt
