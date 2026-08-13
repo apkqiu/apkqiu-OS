@@ -9,35 +9,38 @@ def trace_file(file: str):
 
 @define_tracer("gcc")
 def trace_gcc(file: str):
-    out = execute_capture(
+    out = execute(
         "gcc",
         "-MM",
         "-Isrc/include",
         "-Isrc/include/std",
-        file
+        file,
+        capture=True
     )
     x = shlex.split(out[out.index(":"):])
     return [i for i in x[1:] if i not in (file,'\n')]
 
 @define_tracer("g++")
 def trace_gxx(file: str):
-    out = execute_capture(
+    out = execute(
         "g++",
         "-MM",
         "-Isrc/include",
         "-Isrc/include/std",
-        file
+        file,
+        capture=True
     )
     x = shlex.split(out[out.index(":"):])
     return [i for i in x[1:] if i not in (file,'\n')]
 
 @define_tracer("nasm")
 def trace_nasm(file: str):
-    out = execute_capture(
+    out = execute(
         "nasm",
         "-M",
         "-Isrc/boot",
-        file
+        file,
+        capture=True
     )
     x = shlex.split(out[out.index(":"):])
     return [i for i in x[1:] if i not in (file,'\n')]

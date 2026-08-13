@@ -62,7 +62,7 @@ def ld_link(dst, src, ldfile):
 ERROR_CODE_VECTORS = {8, 10, 11, 12, 13, 14, 17, 30}
 
 
-@d.register("src/include/system/idth.h", [])
+@d.rule("src/include/system/idth.h", [])
 def make_idth(dst, src):
     with open(dst, "w") as f:
         f.write(
@@ -89,7 +89,8 @@ void make_idt(){
     asm volatile("mov %%cs, %0" : "=r"(cs));
 """)
         f.writelines(
-            f"/**/idt_set_gate({i}, (uint64_t)idt_{i}, cs, {0x8E});\n" for i in range(256)
+            f"/**/idt_set_gate({i}, (uint64_t)idt_{i}, cs, {0x8E});\n"
+            for i in range(256)
         )
         f.write("}")
 
@@ -98,22 +99,24 @@ objs = []
 for cpp in glob("src/kernel/**/*.cpp"):
     obj_name = f"build/kernel/{n(cpp)}.o"
     objs.append(obj_name)
-    d.trace("g++", cpp)
-    d.add(obj_name, cpp, gxx_elf)
+    d.trace_rule("g++", cpp)
+    d.add_rule(obj_name, cpp, gxx_elf)
 
 
 for c in glob("src/kernel/**/*.c"):
     obj_name = f"build/kernel/{n(c)}.o"
     objs.append(obj_name)
-    d.trace("gcc", c)
+    d.trace_rule("gcc", c)
     if c == "src/kernel/system/idt.c":
-        d.add(obj_name, c, gcc_nosse)
+        d.add_rule(obj_name, c, gcc_nosse)
     else:
-        d.add(obj_name, c, gcc_elf)
+        d.add_rule(obj_name, c, gcc_elf)
 
 for asm in glob("src/kernel/**/*.asm"):
     obj_name = f"build/kernel/{n(asm)}.o"
     objs.append(obj_name)
-    d.add(obj_name, asm, nasm_elf)
+    d.add_rule(obj_name, asm, nasm_elf)
 
-d.add("build/kernel/kernel.elf", objs, lambda *a: ld_link(*a, "src/kernel/linker.ld"))
+d.add_rule(
+    "build/kernel/kernel.elf", objs, lambda *a: ld_link(*a, "src/kernel/linker.ld")
+)

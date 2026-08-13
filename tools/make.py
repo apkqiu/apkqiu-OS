@@ -27,6 +27,7 @@ MAKE_FLAGS = ("-j", min(8, multiprocessing.cpu_count()))
 env = os.environ.copy()
 env["PATH"] = f"{PREFIX}/bin:{env['PATH']}"
 
+
 def build_compiler_for(TARGET, ts):
     BINUTILS_BUILD = BINUTILS_PATH[0] + "/" + TARGET
     GCC_BUILD = GCC_PATH[0] + "/" + TARGET
@@ -35,7 +36,7 @@ def build_compiler_for(TARGET, ts):
     os.makedirs(GCC_BUILD, exist_ok=True)
     os.makedirs(BINUTILS_BUILD, exist_ok=True)
 
-    wait([ts[0]]) # binutils
+    wait([ts[0]])  # binutils
     execute(
         "../" + BINUTILS_PATH[1] + "/configure",
         f"--target={TARGET}",
@@ -56,7 +57,7 @@ def build_compiler_for(TARGET, ts):
         "install",
         cwd=BINUTILS_BUILD,
     )
-    wait([ts[1]]) # gcc
+    wait([ts[1]])  # gcc
     execute(
         "../" + GCC_PATH[1] + "/configure",
         f"--target={TARGET}",
@@ -81,9 +82,10 @@ def build_compiler_for(TARGET, ts):
             cwd=GCC_BUILD,
         )
 
+
 def build_compilers():
     t = ThreadPoolExecutor(4)
-    
+
     def download_binutils():
         if not os.path.exists("build/binutils.tar.lz"):
             execute("curl", BINUTILS_URL, "-o", "build/binutils.tar.lz")
@@ -97,8 +99,13 @@ def build_compilers():
         if not os.path.exists("build/gcc"):
             os.makedirs(GCC_PATH[0], exist_ok=True)
             execute("tar", "-xavf", "build/gcc.tar.lz", "-C", "build/gcc")
-        # patch it!
-            with open(os.path.join(GCC_PATH[0], GCC_PATH[1], "gcc", "config", "i386", "t-x86_64-elf"), "a") as f:
+            # patch it!
+            with open(
+                os.path.join(
+                    GCC_PATH[0], GCC_PATH[1], "gcc", "config", "i386", "t-x86_64-elf"
+                ),
+                "a",
+            ) as f:
                 f.write("""
 # libgcc without red zone
 
@@ -107,25 +114,35 @@ MULTILIB_DIRNAMES += no-red-zone
 """)
 
             c = []
-            with open(os.path.join(GCC_PATH[0], GCC_PATH[1], "gcc", "config.gcc"), "r") as f:
+            with open(
+                os.path.join(GCC_PATH[0], GCC_PATH[1], "gcc", "config.gcc"), "r"
+            ) as f:
                 c = f.readlines()
 
-            c.insert(c.index("x86_64-*-elf*)\n")+1, '\ttmake_file = " ${tmake_file} i386/t-x86_64-elf"\n')
-            with open(os.path.join(GCC_PATH[0], GCC_PATH[1], "gcc", "config.gcc"), "w") as f:
+            c.insert(
+                c.index("x86_64-*-elf*)\n") + 1,
+                '\ttmake_file = " ${tmake_file} i386/t-x86_64-elf"\n',
+            )
+            with open(
+                os.path.join(GCC_PATH[0], GCC_PATH[1], "gcc", "config.gcc"), "w"
+            ) as f:
                 f.writelines(c)
-    a = t.submit(download_binutils),t.submit(download_gcc)
+
+    a = t.submit(download_binutils), t.submit(download_gcc)
     # wait(a)
-    
-    for target in ("i686-elf","x86_64-elf"):
+
+    for target in ("i686-elf", "x86_64-elf"):
         t.submit(build_compiler_for, target, a)
     t.shutdown(True)
+
+
 def destroy_compilers():
     # 嘻嘻，只有磁盘不足的杂鱼才会用！
     if input("确定要毁灭编译器吗，zako？(y/N) ").lower() != "y":
         return
     for i in (BINUTILS_PATH[0], GCC_PATH[0], PREFIX):
-        execute("rm", "-rfv",i )
+        execute("rm", "-rfv", i)
+
 
 c.commands["destroy-compilers"] = destroy_compilers
 c.commands["build-compilers"] = build_compilers
-

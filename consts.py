@@ -8,12 +8,12 @@ class EnvironmentConfig:
         self.CC = self.CXX = self.LD = self.OBJCOPY = ""
 
     def use(self, tool: str):
-        return f"tools/prefix/{self.ARCH}-{tool}"
+        return f"tools/prefix/bin/{self.ARCH}-{tool}"
 
     def list(self):
         return [
             i.removeprefix(f"{self.ARCH}-")
-            for i in os.listdir("tools/prefix/")
+            for i in os.listdir("tools/prefix/bin/")
             if i.startswith(f"{self.ARCH}-")
         ]
 

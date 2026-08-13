@@ -43,13 +43,13 @@ objs = []
 for c in glob("src/long/**/*.c"):
     obj_name = f"build/long/{n(c)}.o"
     objs.append(obj_name)
-    d.trace("gcc", c)
-    d.add(obj_name, c, gcc_elf)
+    d.trace_rule("gcc", c)
+    d.add_rule(obj_name, c, gcc_elf)
 
 for asm in glob("src/long/**/*.asm"):
     obj_name = f"build/long/{n(asm)}.o"
     objs.append(obj_name)
-    d.add(obj_name, asm, nasm_elf)
+    d.add_rule(obj_name, asm, nasm_elf)
 
-d.add("build/long/long.elf", objs, lambda *a: ld_link(*a, "src/long/linker.ld"))
-d.add("build/long/long.bin", "build/long/long.elf", objcopy)
+d.add_rule("build/long/long.elf", objs, lambda *a: ld_link(*a, "src/long/linker.ld"))
+d.add_rule("build/long/long.bin", "build/long/long.elf", objcopy)

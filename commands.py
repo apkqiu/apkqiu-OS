@@ -4,7 +4,7 @@ c = MakeConfig()
 
 @c.command("clean")
 def clean():
-    execute("rm", "-rfv", "build", ".cache.json")
+    execute("rm", "-rfv", "build", ".cache.json", "logs")
 
 
 @c.command("run")
