@@ -75,6 +75,7 @@ def build_compiler_for(TARGET, ts):
             f"all-{i}",
             MAKE_FLAGS,
             cwd=GCC_BUILD,
+            env=env
         )
         execute(
             "make",
@@ -82,7 +83,7 @@ def build_compiler_for(TARGET, ts):
             cwd=GCC_BUILD,
         )
 
-
+@c.command("build-compilers")
 def build_compilers():
     t = ThreadPoolExecutor(4)
 
@@ -135,7 +136,7 @@ MULTILIB_DIRNAMES += no-red-zone
         t.submit(build_compiler_for, target, a)
     t.shutdown(True)
 
-
+@c.command("destroy-compilers")
 def destroy_compilers():
     # 嘻嘻，只有磁盘不足的杂鱼才会用！
     if input("确定要毁灭编译器吗，zako？(y/N) ").lower() != "y":
@@ -143,6 +144,3 @@ def destroy_compilers():
     for i in (BINUTILS_PATH[0], GCC_PATH[0], PREFIX):
         execute("rm", "-rfv", i)
 
-
-c.commands["destroy-compilers"] = destroy_compilers
-c.commands["build-compilers"] = build_compilers
